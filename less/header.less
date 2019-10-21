@@ -1,4 +1,36 @@
 header {
-    width: 100%;
-    height: 100vh;
+    overflow: hidden;
+    
+    #hwrapper {
+        background-image: url("../imgs/veggieburger.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        h1 {
+            margin: 20% 0 25% 0;
+            font-weight: 600;
+            font-size: 6rem;
+            text-shadow: 0.5px 0 white;
+        }
+        div {
+            button {
+                font-size: 2rem;
+                border-radius: 8px;
+                border: 0.5px solid black;
+                display: block;
+                margin: 0 auto;
+                padding: 2%;
+                cursor: pointer;
+                &:hover {
+                    color: lightgray;
+                    background-color: white;
+                }
+            }
+            
+        }
+    } 
 }
