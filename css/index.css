@@ -133,7 +133,32 @@ html {
 }
 html a {
   text-decoration: none;
-  color: black;
+  color: #343434;
+}
+nav {
+  padding: 10px 15px;
+  background-image: linear-gradient(135deg, #d7d7d7 50%, #52BA5D 50%);
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #343434;
+}
+nav h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: right;
+  color: #52BA5D;
+}
+nav h1 span {
+  color: #343434;
+}
+nav div a {
+  color: white;
+  font-size: 2rem;
+  padding-right: 20px;
 }
 header {
   background-image: url("../imgs/veggieburger.jpg");
@@ -157,20 +182,29 @@ header h1 {
     text-align: center;
   }
 }
-header div button {
-  font-size: 2rem;
+header #button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: green;
+  padding: 20px;
   border-radius: 5px;
-  background-image: linear-gradient(135deg, #49C628 10%, #70F570 100%);
-  transition: background-image 375ms ease-in-out;
-  border: 0.5px solid black;
   display: block;
   margin: 0 auto;
-  padding: 2%;
+  width: 25%;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  transition: all 0.4s ease 0s;
   cursor: pointer;
 }
-header div button:hover {
-  color: lightgray;
-  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+header #button:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 section {
   width: 100%;
@@ -204,7 +238,7 @@ section #contsect1 {
 section #contsect1 img {
   max-width: 100%;
   align-self: start;
-  border: 1px solid black;
+  border: 1px solid #343434;
   border-radius: 30px;
   margin: 2% 0;
 }
