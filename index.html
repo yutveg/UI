@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>VeggieRadar | The Ethical Reviewer</title>
 </head>
 <body>
@@ -28,29 +29,36 @@
         <h1>"The Ethical Yelp" - Anonymous, 2019</h1>
 
         <div id="contsect1">
-            <div>
-            <h2>Browse Restaurants By Category</h2>
+            <div class="slides">
+            <h2>Browse The Current Library</h2>
             <hr>
             <img src="imgs/veggieradar.jpg" />
             </div>
             
-            <div>
+            <div class="slides">
             <h2>Add To Our Growing Collection</h2>
             <hr>
             <img src="imgs/addrest.jpg" />
             </div>
 
-            <div>
+            <div class="slides">
             <h2>Get The Deets On Any Joint</h2>
             <hr>
             <img src="imgs/ouifrench.jpg" />
             </div>
 
-            <div>
-            <h2>Leave Reviews For Other Veggies</h2>
+            <div class="slides">
+            <h2>Leave Your Hot Takes</h2>
             <hr>
             <img src="imgs/submitreviews.jpg" />
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center;display:none;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
         <h2>We'd love for you to join us. What do you say?</h2>

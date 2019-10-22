@@ -144,13 +144,29 @@ nav {
   align-items: center;
   border-bottom: 1px solid #343434;
 }
+@media (max-width: 745px) {
+  nav {
+    padding: 0;
+  }
+}
 nav h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 54px;
-  text-align: right;
   color: #52BA5D;
+}
+@media (max-width: 745px) {
+  nav h1 {
+    font-size: 3.7rem;
+    padding: 2% 0;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(90deg, #d7d7d7 50%, #52BA5D 50%);
+  }
+  nav h1 span {
+    margin-left: 40px;
+  }
 }
 nav h1 span {
   color: #343434;
@@ -164,6 +180,27 @@ nav div a {
 nav div a:hover {
   color: white;
 }
+@media (max-width: 745px) {
+  nav div a {
+    padding: 4% 0;
+    border-top: 1px solid black;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 745px) {
+  nav div {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 745px) {
+  nav {
+    flex-flow: column nowrap;
+    background-image: none;
+  }
+}
 header {
   background-image: url("../imgs/veggieburger.jpg");
   background-repeat: no-repeat;
@@ -175,19 +212,30 @@ header {
   justify-content: center;
   align-items: center;
 }
-header h1 {
+@media (max-width: 745px) {
+  header {
+    height: 50vh;
+  }
+}
+header #hwrapper {
+  background: rgba(52, 52, 52, 0.7);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2% 1%;
+}
+header #hwrapper h1 {
   color: black;
   margin-bottom: 5%;
   font-weight: 600;
   font-size: 6rem;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 2px 4px 3px rgba(216, 216, 216, 0.3);
 }
-@media (max-width: 625px) {
-  header h1 {
+@media (max-width: 693px) {
+  header #hwrapper h1 {
     text-align: center;
   }
 }
-header #button {
+header #hwrapper #button {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
@@ -203,7 +251,7 @@ header #button {
   transition: all 0.4s ease 0s;
   cursor: pointer;
 }
-header #button:hover {
+header #hwrapper #button:hover {
   background: #434343;
   letter-spacing: 1px;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -226,7 +274,12 @@ section h1 {
   color: transparent;
   text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
   text-align: center;
-  padding: 0.5% 0;
+  padding: 1% 0;
+}
+@media (max-width: 640px) {
+  section h1 {
+    font-size: 2rem;
+  }
 }
 section #contsect1 {
   max-width: 800px;
@@ -235,31 +288,56 @@ section #contsect1 {
   justify-content: space-between;
   margin: 0 auto;
 }
-@media (max-width: 751px) {
+@media (max-width: 807px) {
   section #contsect1 {
-    justify-content: center;
+    position: relative;
   }
 }
-section #contsect1 div {
+section #contsect1 .slides {
   margin-top: 5%;
 }
-section #contsect1 div h2 {
+section #contsect1 .slides h2 {
   font-weight: 600;
   font-size: 2.5rem;
   text-align: center;
 }
-section #contsect1 div img {
+section #contsect1 .slides img {
   max-width: 100%;
   align-self: start;
   border: 1px solid #343434;
   border-radius: 30px;
   margin: 2% 0;
 }
+@media (max-width: 807px) {
+  section #contsect1 .slides {
+    display: none;
+  }
+}
+section #contsect1 .prev,
+section #contsect1 .next {
+  display: none;
+}
+@media (max-width: 807px) {
+  section #contsect1 .prev,
+  section #contsect1 .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+}
 section h2 {
   text-align: center;
   font-size: 3rem;
-  color: #343434;
-  padding: 2% 0 1% 0;
+  padding: 2% 0;
 }
 section #button {
   color: #fff !important;
@@ -288,7 +366,7 @@ section #button:hover {
 footer {
   background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
   padding: 1% 0;
-  margin-top: 4%;
+  margin-top: 2%;
   font-size: 3rem;
   text-align: center;
 }
