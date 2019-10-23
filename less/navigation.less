@@ -10,12 +10,15 @@ nav {
     @media (max-width: 745px){
         padding: 0;
     }
-    h1 {
+    a {
         font-style: normal;
         font-weight: normal;
-        font-size: 36px;
+        font-size: 3.6rem;
         line-height: 54px;
-        
+        transition: letter-spacing 400ms ease-in-out;
+        &:hover {
+            letter-spacing: 3px;
+        }
         @media (max-width: 745px){
             font-size: 3.7rem;
             padding: 2% 0;
@@ -33,7 +36,7 @@ color: #52BA5D;
             color: #343434;
         }
     }
-    div {
+    #navdiv {
         a {
             color: black;
             transition: color 300ms ease-in;
@@ -48,6 +51,7 @@ color: #52BA5D;
                 padding: 4% 0;
                 border-top: 1px solid black;
                 font-size: 3rem;
+                background: #E5E5E5;
             }
         }
         @media(max-width: 745px){

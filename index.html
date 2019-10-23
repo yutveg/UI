@@ -11,10 +11,10 @@
 <body>
     <!--Navigation Section-->
     <nav>
-        <h1>Veggie<span>Radar</span></h1>
-        <div>
+        <a href="index.html">Veggie<span>Radar</span></a>
+        <div id="navdiv">
         <a href="#">Sign Me Up</a>
-        <a href="#">Meet The Team</a>
+        <a href="about.html">Meet The Team</a>
         </div>
     </nav>
     <!-- Showcase and Sign Up Section-->
@@ -25,42 +25,34 @@
         </div>
     </header>
     <!-- Main Content Section-->
-    <section>
+    <section id="indexsection">
         <h1>"The Ethical Yelp" - Anonymous, 2019</h1>
-
         <div id="contsect1">
-            <div class="slides">
-            <h2>Browse The Current Library</h2>
-            <hr>
-            <img src="imgs/veggieradar.jpg" />
+            <div class="appfeats">
+                <h2>Browse The Current Library</h2>
+                <hr>
+                <img src="imgs/veggieradar.jpg" alt="app library browser" />
             </div>
             
-            <div class="slides">
-            <h2>Add To Our Growing Collection</h2>
-            <hr>
-            <img src="imgs/addrest.jpg" />
+            <div class="appfeats">
+                <h2>Add To Our Collection</h2>
+                <hr>
+                <img src="imgs/addrest.jpg" alt="add restaurant page"/>
             </div>
 
-            <div class="slides">
-            <h2>Get The Deets On Any Joint</h2>
-            <hr>
-            <img src="imgs/ouifrench.jpg" />
+            <div class="appfeats">
+                <h2>Get The Deets On Any Joint</h2>
+                <hr>
+                <img src="imgs/ouifrench.jpg" alt="specific restaurant page"/>
             </div>
 
-            <div class="slides">
-            <h2>Leave Your Hot Takes</h2>
-            <hr>
-            <img src="imgs/submitreviews.jpg" />
+            <div class="appfeats">
+                <h2>Leave Your Hot Takes</h2>
+                <hr>
+                <img src="imgs/submitreviews.jpg" alt="submitted review page"    />
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div style="text-align:center;display:none;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
+        <!-- Call To Action Closer-->
         <h2>We'd love for you to join us. What do you say?</h2>
         <a id="button" href="#">Sign Me Up!</a>
     </section>

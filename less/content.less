@@ -1,9 +1,9 @@
-section {
+#indexsection {
     width: 100%;
     margin: 0 auto;
     h1 {
         width: 100%;
-        background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+        background-image: linear-gradient(135deg, #70F570 10%, #52BA5D 100%);
         font-size: 3.6rem;
         font-weight: 600;
         -webkit-background-clip: text;
@@ -12,8 +12,10 @@ section {
         color: transparent;
         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
         text-align: center;
-        padding: 1% 0;
-
+        padding-top: 2.5%;
+        @media (max-width: 803px){
+            padding: 5% 0;
+        }
         @media (max-width: 640px){
             font-size: 2rem;
         }
@@ -25,53 +27,54 @@ section {
         flex-flow: row wrap;
         justify-content: space-between;
         margin: 0 auto;
-
-        @media (max-width: 807px) {
-            position: relative;
+        padding: 0 2%;
+        
+        @media (max-width: 803px) {
+            flex-flow: column nowrap;
+            align-items: center;
+            padding: 0;
         }
 
-        .slides {
+        .appfeats {
             margin-top: 5%;
+             
             h2 {
                 font-weight: 600;
-                font-size: 2.5rem;
+                font-size: 2.4rem;
                 text-align: center;
+            }
+
+            hr {
+                margin: 3% 0;
+                @media (max-width: 803px){
+                    display: none;
+                }
             }
             img {
                 max-width: 100%;
                 align-self: start;
                 border: 1px solid #343434;
                 border-radius: 30px;
-                margin: 2% 0;
+                @media (max-width: 803px){
+                    display: block;
+                    margin: 0 auto;
+                }
             }
-            @media (max-width: 807px) {
-                display: none;
-            }
-        }
-        .prev, .next {
-            display: none;
-            
 
-            @media (max-width: 807px){
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
+            @media (max-width: 803px){
+                padding: 4% 0;
+                margin-top: 0;
+                width: 100%;
+                &:nth-child(odd){
+                    background-color: #52BA5D;  
+                }
             }
         } 
-    }//end cont sect1
+    }//end cont sect1 on index page
     h2 {
         text-align: center;
         font-size: 3rem;
-        padding: 2% 0;
+        padding: 2% 2%;
     }
     #button {
         .buttonshtoyle();
@@ -79,9 +82,9 @@ section {
 }
 
 footer {
-    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+    background-image: linear-gradient(135deg, #70F570 10%, #52BA5D 100%);
     padding: 1% 0;
     margin-top: 2%;
-    font-size: 3rem;
+    font-size: 2.3rem;
     text-align: center;
     }
