@@ -448,6 +448,9 @@ footer {
   margin-top: 2%;
   font-size: 2rem;
   text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
   border-top: 1px solid #343434;
 }
 @media (max-width: 595px) {
