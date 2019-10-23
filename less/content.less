@@ -69,7 +69,7 @@
                     background-color: #52BA5D;  
                 }
             }
-        } 
+        } //end app feats
     }//end cont sect1 on index page
     h2 {
         text-align: center;
@@ -78,13 +78,75 @@
     }
     #button {
         .buttonshtoyle();
+        @media (max-width: 595px){
+            margin-bottom: 3%;
+        }
+    }
+}
+#abouth1{
+    font-size: 4rem;
+    margin: 3% 0;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+}
+#teamsection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    background-image: url("../imgs/team.jpg");
+    border-radius: 5px;
+    @media (max-width: 595px){
+        background-image: linear-gradient(45deg, #70F570 30%, #52BA5D 70%);
+    }
+    #aboutcontent {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @media (max-width: 595px){
+            flex-flow: column nowrap;
+            align-items:center;
+        }
+        .teaminfo {
+            -webkit-box-shadow: 0 3px 2px #343434;
+	        -moz-box-shadow: 0 3px 2px #343434;
+	        box-shadow: 0 3px 2px #343434;
+            background-color: #E5E5E5;
+            width: 45%;
+            margin: 3% 0;
+            border: 1px solid black;
+            padding: 1%;
+            border-radius: 5px;
+
+            @media (max-width: 595px){
+                width: 80%;
+            }
+            h2 {
+                font-size: 3rem;
+                padding: 2% 0;
+            }
+            h3 {
+                font-size: 2.4rem;
+                padding: 2% 0;
+            }
+            p {
+                font-size: 1.8rem;
+                padding: 2% 0;
+                line-height: 2;
+            }
+        }
     }
 }
 
 footer {
-    background-image: linear-gradient(135deg, #70F570 10%, #52BA5D 100%);
-    padding: 1% 0;
+    background-image: radial-gradient( circle farthest-corner at 0.4% 34.3%,  rgba(65,199,58,1) 1.3%, rgb(56, 146, 51) 90% );
+    padding: 2% 0;
     margin-top: 2%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
+    border-top: 1px solid #343434;
+
+    @media (max-width: 595px){
+        margin-top: 0;
     }
+}
