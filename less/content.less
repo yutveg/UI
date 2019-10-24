@@ -95,7 +95,7 @@
     padding: 0 2%;
     background-image: url("../imgs/team.jpg");
     border-radius: 5px;
-    @media (max-width: 595px){
+    @media (max-width: 668px){
         background-image: linear-gradient(45deg, #70F570 30%, #52BA5D 70%);
     }
     #aboutcontent {
@@ -103,7 +103,7 @@
         flex-flow: row wrap;
         justify-content: space-between;
 
-        @media (max-width: 595px){
+        @media (max-width: 668px){
             flex-flow: column nowrap;
             align-items:center;
         }
@@ -112,28 +112,84 @@
 	        -moz-box-shadow: 0 3px 2px #343434;
 	        box-shadow: 0 3px 2px #343434;
             background-color: #E5E5E5;
-            width: 45%;
             margin: 3% 0;
             border: 1px solid black;
             padding: 1%;
             border-radius: 5px;
+            transition: background-color 300ms ease-in;
+            width: 45%;
 
-            @media (max-width: 595px){
+            .flipper {
+                transition: 0.8s;
+                transform-style: preserve-3d;
+                height: 100%;
+            }
+            &:hover {
+                background-color: #52BA5D;
+                .flipper {
+                    transform: rotateY(180deg);
+                }
+            }
+            .frame1, .frame2 {
+                backface-visibility: hidden;
+
+            }
+            .frame1 {
+	            transform: rotateY(0deg);
+                .cardhead {
+                    font-size: 3rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (max-width: 668px){
+                        padding: 2% 0;
+                    } 
+                    @media (max-width: 1200px){
+                        justify-content: center;
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 2.5rem;
+                    padding: 2% 0;
+                    text-align: center;
+                    @media (max-width: 668px){
+                        font-size: 3rem;
+                    } 
+                }
+                p {
+                    font-size: 1.8rem;
+                    padding: 2% 0;
+                    line-height: 2;
+                    @media (max-width: 668px){
+                        font-size: 2.3rem;
+                        text-align: center;
+                    } 
+                }
+            }
+            .frame2 {
+                transform: rotateY(180deg);
+                @media (max-width: 1200px){
+                    transform: rotateY(0deg);
+                }
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items:center;
+                a {
+                    font-size: 3rem;
+                    padding: 2% 0; 
+                    @media (max-width: 371px){
+                        font-size: 2.3rem;
+                    } 
+                }
+            }
+            @media (max-width: 668px){
                 width: 80%;
-            }
-            h2 {
-                font-size: 3rem;
-                padding: 2% 0;
-            }
-            h3 {
-                font-size: 2.4rem;
-                padding: 2% 0;
-            }
-            p {
-                font-size: 1.8rem;
-                padding: 2% 0;
-                line-height: 2;
-            }
+                padding: 2%;
+            } 
         }
     }
 }

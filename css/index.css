@@ -397,7 +397,7 @@ header #hwrapper #button:hover {
   background-image: url("../imgs/team.jpg");
   border-radius: 5px;
 }
-@media (max-width: 595px) {
+@media (max-width: 668px) {
   #teamsection {
     background-image: linear-gradient(45deg, #70F570 30%, #52BA5D 70%);
   }
@@ -407,7 +407,7 @@ header #hwrapper #button:hover {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-@media (max-width: 595px) {
+@media (max-width: 668px) {
   #teamsection #aboutcontent {
     flex-flow: column nowrap;
     align-items: center;
@@ -418,29 +418,97 @@ header #hwrapper #button:hover {
   -moz-box-shadow: 0 3px 2px #343434;
   box-shadow: 0 3px 2px #343434;
   background-color: #E5E5E5;
-  width: 45%;
   margin: 3% 0;
   border: 1px solid black;
   padding: 1%;
   border-radius: 5px;
+  transition: background-color 300ms ease-in;
+  width: 45%;
 }
-@media (max-width: 595px) {
-  #teamsection #aboutcontent .teaminfo {
-    width: 80%;
+#teamsection #aboutcontent .teaminfo .flipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+#teamsection #aboutcontent .teaminfo:hover {
+  background-color: #52BA5D;
+}
+#teamsection #aboutcontent .teaminfo:hover .flipper {
+  transform: rotateY(180deg);
+}
+#teamsection #aboutcontent .teaminfo .frame1,
+#teamsection #aboutcontent .teaminfo .frame2 {
+  backface-visibility: hidden;
+}
+#teamsection #aboutcontent .teaminfo .frame1 {
+  transform: rotateY(0deg);
+}
+#teamsection #aboutcontent .teaminfo .frame1 .cardhead {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 668px) {
+  #teamsection #aboutcontent .teaminfo .frame1 .cardhead {
+    padding: 2% 0;
   }
 }
-#teamsection #aboutcontent .teaminfo h2 {
-  font-size: 3rem;
-  padding: 2% 0;
+@media (max-width: 1200px) {
+  #teamsection #aboutcontent .teaminfo .frame1 .cardhead {
+    justify-content: center;
+  }
+  #teamsection #aboutcontent .teaminfo .frame1 .cardhead img {
+    display: none;
+  }
 }
-#teamsection #aboutcontent .teaminfo h3 {
-  font-size: 2.4rem;
+#teamsection #aboutcontent .teaminfo .frame1 h3 {
+  font-size: 2.5rem;
   padding: 2% 0;
+  text-align: center;
 }
-#teamsection #aboutcontent .teaminfo p {
+@media (max-width: 668px) {
+  #teamsection #aboutcontent .teaminfo .frame1 h3 {
+    font-size: 3rem;
+  }
+}
+#teamsection #aboutcontent .teaminfo .frame1 p {
   font-size: 1.8rem;
   padding: 2% 0;
   line-height: 2;
+}
+@media (max-width: 668px) {
+  #teamsection #aboutcontent .teaminfo .frame1 p {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+#teamsection #aboutcontent .teaminfo .frame2 {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  #teamsection #aboutcontent .teaminfo .frame2 {
+    transform: rotateY(0deg);
+  }
+}
+#teamsection #aboutcontent .teaminfo .frame2 a {
+  font-size: 3rem;
+  padding: 2% 0;
+}
+@media (max-width: 371px) {
+  #teamsection #aboutcontent .teaminfo .frame2 a {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 668px) {
+  #teamsection #aboutcontent .teaminfo {
+    width: 80%;
+    padding: 2%;
+  }
 }
 footer {
   background-image: radial-gradient(circle farthest-corner at 0.4% 34.3%, #41c73a 1.3%, #389233 90%);
