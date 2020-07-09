@@ -146,11 +146,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #343434;
+  border-bottom: 1px solid #242424;
 }
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   nav {
     padding: 0;
+    border-bottom: none;
   }
 }
 nav a {
@@ -158,13 +159,13 @@ nav a {
   font-weight: normal;
   font-size: 3.6rem;
   line-height: 54px;
-  transition: letter-spacing 400ms ease-in-out;
   color: #52BA5D;
 }
 nav a:hover {
   letter-spacing: 3px;
+  transition: letter-spacing 400ms ease-in-out;
 }
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   nav a {
     font-size: 4rem;
     padding: 4% 0;
@@ -184,29 +185,32 @@ nav a span {
 nav #navdiv a {
   color: black;
   transition: color 300ms ease-in;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-right: 20px;
 }
 nav #navdiv a:hover {
+  letter-spacing: 2px;
+  transition: all 400ms ease-in-out;
   color: white;
 }
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   nav #navdiv a {
-    padding: 4% 0;
     border-top: 1px solid black;
     font-size: 3rem;
     background: #E5E5E5;
+    padding-right: 0;
   }
 }
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   nav #navdiv {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
     width: 100%;
+    border-bottom: 1px solid #242424;
   }
 }
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   nav {
     flex-flow: column nowrap;
     background-image: none;
@@ -232,7 +236,8 @@ header #hwrapper {
   background: rgba(52, 52, 52, 0.7);
   border: 1px solid black;
   border-radius: 5px;
-  padding: 2% 1%;
+  padding: 15px;
+  margin: 0 30px;
 }
 header #hwrapper h1 {
   color: black;
@@ -241,13 +246,18 @@ header #hwrapper h1 {
   font-size: 6rem;
   text-shadow: 2px 4px 3px rgba(216, 216, 216, 0.3);
 }
-@media (max-width: 693px) {
+@media (max-width: 768px) {
   header #hwrapper h1 {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  header #hwrapper h1 {
+    font-size: 3rem;
+  }
+}
 header #hwrapper #button {
-  color: #fff !important;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background: green;
@@ -269,6 +279,12 @@ header #hwrapper #button:hover {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
+}
+@media (max-width: 600px) {
+  header #hwrapper #button {
+    width: 75%;
+    font-size: 1.5rem;
+  }
 }
 #indexsection {
   width: 100%;
@@ -314,6 +330,10 @@ header #hwrapper #button:hover {
 }
 #indexsection #contsect1 .appfeats {
   margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 #indexsection #contsect1 .appfeats h2 {
   font-weight: 600;
@@ -329,16 +349,11 @@ header #hwrapper #button:hover {
   }
 }
 #indexsection #contsect1 .appfeats img {
-  max-width: 100%;
-  align-self: start;
+  max-width: 80%;
   border: 1px solid #343434;
   border-radius: 30px;
-}
-@media (max-width: 803px) {
-  #indexsection #contsect1 .appfeats img {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
+  margin: 0 75px;
 }
 @media (max-width: 803px) {
   #indexsection #contsect1 .appfeats {
@@ -355,8 +370,13 @@ header #hwrapper #button:hover {
   font-size: 3rem;
   padding: 2% 2%;
 }
+@media (max-width: 425px) {
+  #indexsection h2 {
+    padding: 0;
+  }
+}
 #indexsection #button {
-  color: #fff !important;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background: green;
@@ -378,6 +398,12 @@ header #hwrapper #button:hover {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
+}
+@media (max-width: 600px) {
+  #indexsection #button {
+    width: 75%;
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 595px) {
   #indexsection #button {
