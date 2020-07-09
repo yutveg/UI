@@ -1,222 +1,162 @@
 #indexsection {
+  width: 100%;
+  margin: 0 auto;
+  h1 {
     width: 100%;
-    margin: 0 auto;
-    h1 {
-        width: 100%;
-        background-image: linear-gradient(135deg, #70F570 10%, #52BA5D 100%);
-        font-size: 3.6rem;
-        font-weight: 600;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-        text-align: center;
-        padding-top: 2.5%;
-        @media (max-width: 768px){
-            font-size: 2.5rem;
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-
-    #contsect1 {
-        max-width: 800px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin: 0 auto 25px auto;
-        padding: 0 2%;
-        
-        @media (max-width: 803px) {
-            flex-flow: column nowrap;
-            align-items: center;
-            padding: 0;
-        }
-
-        .appfeats {
-            margin-top: 5%;
-            padding: 40px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-            h2 {
-                font-weight: 600;
-                font-size: 2.4rem;
-                text-align: center;
-                padding-bottom: 15px;
-            }
-            hr {
-                margin: 3% 0;
-                @media (max-width: 803px){
-                    display: none;
-                }
-            }
-            img {
-                max-width: 80%;
-                object-fit: contain;
-                border: 1px solid #343434;
-                border-radius: 30px;
-                display: block;
-
-                @media (max-width: 803px){
-                    margin: 0 75px;
-                }
-            }
-
-            @media (max-width: 803px){
-                margin-top: 0;
-                width: 100%;
-                &:nth-child(even){
-                    background-color: #52BA5D;  
-                }
-            }
-        } //end app feats
-    }//end cont sect1 on index page
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        padding: 2% 2%;
-        @media (max-width: 425px){
-            padding: 0;
-        }
-    }
-    #end-h2 {
-        margin: 0 auto 20px auto;
-        max-width: 80%;
-        text-align: center;
-        line-height: 2;
-        @media (max-width: 425px){
-            font-size: 2.3rem;
-        }
-    }
-    #button {
-        .buttonshtoyle();
-        @media (max-width: 595px){
-            margin-bottom: 3%;
-        }
-    }
-}
-#abouth1{
-    font-size: 4rem;
-    padding: 25px 0;
+    background-image: linear-gradient(135deg, #70f570 10%, #52ba5d 100%);
+    font-size: 3.6rem;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
     text-align: center;
-    text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+    padding-top: 2.5%;
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  #contsect1 {
+    max-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto 25px auto;
+    padding: 0 2%;
+
+    @media (max-width: 803px) {
+      flex-flow: column nowrap;
+      align-items: center;
+      padding: 0;
+    }
+
+    .appfeats {
+      margin-top: 5%;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      h2 {
+        font-weight: 600;
+        font-size: 2.4rem;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      hr {
+        margin: 3% 0;
+        @media (max-width: 803px) {
+          display: none;
+        }
+      }
+      img {
+        max-width: 80%;
+        object-fit: contain;
+        border: 1px solid #343434;
+        border-radius: 30px;
+        display: block;
+
+        @media (max-width: 803px) {
+          margin: 0 75px;
+        }
+      }
+
+      @media (max-width: 803px) {
+        margin-top: 0;
+        width: 100%;
+        &:nth-child(even) {
+          background-color: #52ba5d;
+        }
+      }
+    } //end app feats
+  } //end cont sect1 on index page
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2% 2%;
+    @media (max-width: 425px) {
+      padding: 0;
+    }
+  }
+  #end-h2 {
+    margin: 0 auto 20px auto;
+    max-width: 80%;
+    text-align: center;
+    line-height: 2;
+    @media (max-width: 425px) {
+      font-size: 2.3rem;
+    }
+  }
+  #button {
+    .buttonshtoyle();
+    @media (max-width: 595px) {
+      margin-bottom: 3%;
+    }
+  }
+}
+
+#abouth1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 }
 
 #teamsection {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2%;
-    background-image: url("../imgs/team.jpg");
-    @media (max-width: 668px){
-        background-image: linear-gradient(45deg, #70F570 30%, #52BA5D 70%);
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  background-image: url("../imgs/team.jpg");
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+
+  .teaminfo {
+    background: #f4f4f4;
+    padding: 20px;
+    font-size: 2rem;
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
-    #aboutcontent {
-        display: flex; 
-        flex-flow: row wrap;
-        justify-content: space-between;
-
-        @media (max-width: 668px){
-            flex-flow: column nowrap;
-            align-items:center;
-        }
-        .teaminfo {
-            -webkit-box-shadow: 0 3px 2px #343434;
-	        -moz-box-shadow: 0 3px 2px #343434;
-	        box-shadow: 0 3px 2px #343434;
-            background-color: #E5E5E5;
-            margin: 3% 0;
-            border: 1px solid black;
-            padding: 1%;
-            border-radius: 5px;
-            transition: background-color 300ms ease-in;
-            width: 45%;
-
-            .flipper {
-                transition: 0.8s;
-                transform-style: preserve-3d;
-                height: 100%;
-            }
-            &:hover {
-                background-color: #52BA5D;
-                .flipper {
-                    transform: rotateY(180deg);
-                }
-            }
-            .frame1, .frame2 {
-                backface-visibility: hidden;
-
-            }
-            .frame1 {
-	            transform: rotateY(0deg);
-                .cardhead {
-                    font-size: 3rem;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    @media (max-width: 668px){
-                        padding: 2% 0;
-                    } 
-                    @media (max-width: 1200px){
-                        justify-content: center;
-                        img {
-                            display: none;
-                        }
-                    }
-                }
-                h3 {
-                    font-size: 2.5rem;
-                    padding: 2% 0;
-                    text-align: center;
-                    @media (max-width: 668px){
-                        font-size: 3rem;
-                    } 
-                }
-                p {
-                    font-size: 1.8rem;
-                    padding: 2% 0;
-                    line-height: 2;
-                    @media (max-width: 668px){
-                        font-size: 2.3rem;
-                        text-align: center;
-                    } 
-                }
-            }
-            .frame2 {
-                transform: rotateY(180deg);
-                @media (max-width: 1200px){
-                    transform: rotateY(0deg);
-                }
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items:center;
-                a {
-                    font-size: 3rem;
-                    padding: 2% 0; 
-                    @media (max-width: 371px){
-                        font-size: 2.3rem;
-                    } 
-                }
-            }
-            @media (max-width: 668px){
-                width: 80%;
-                padding: 2%;
-            } 
-        }
+    p {
+      margin: 15px 0;
+      line-height: 1.5;
     }
+    a {
+      color: #242424;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
+    @media (max-width: 325px) {
+      max-width: 80%;
+    }
+  }
 }
 
 footer {
-    background-image: radial-gradient( circle farthest-corner at 0.4% 34.3%,  rgba(65,199,58,1) 1.3%, rgb(56, 146, 51) 90% );
-    padding: 20px 0;
-    margin-top: 25px;
-    font-size: 2rem;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    border-top: 1px solid #343434;
+  background-image: radial-gradient(
+    circle farthest-corner at 0.4% 34.3%,
+    rgba(65, 199, 58, 1) 1.3%,
+    rgb(56, 146, 51) 90%
+  );
+  padding: 20px 0;
+  margin-top: 25px;
+  font-size: 2rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  border-top: 1px solid #343434;
 }

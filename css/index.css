@@ -292,7 +292,7 @@ header #hwrapper #button:hover {
 }
 #indexsection h1 {
   width: 100%;
-  background-image: linear-gradient(135deg, #70F570 10%, #52BA5D 100%);
+  background-image: linear-gradient(135deg, #70f570 10%, #52ba5d 100%);
   font-size: 3.6rem;
   font-weight: 600;
   -webkit-background-clip: text;
@@ -365,7 +365,7 @@ header #hwrapper #button:hover {
     width: 100%;
   }
   #indexsection #contsect1 .appfeats:nth-child(even) {
-    background-color: #52BA5D;
+    background-color: #52ba5d;
   }
 }
 #indexsection h2 {
@@ -425,128 +425,50 @@ header #hwrapper #button:hover {
   }
 }
 #abouth1 {
-  font-size: 4rem;
-  padding: 25px 0;
+  font-size: 3rem;
   text-align: center;
-  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+  padding: 20px 0;
+}
+@media (max-width: 600px) {
+  #abouth1 {
+    font-size: 2rem;
+  }
 }
 #teamsection {
   max-width: 1200px;
+  padding: 20px;
   margin: 0 auto;
-  padding: 0 2%;
   background-image: url("../imgs/team.jpg");
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
-@media (max-width: 668px) {
-  #teamsection {
-    background-image: linear-gradient(45deg, #70F570 30%, #52BA5D 70%);
-  }
+#teamsection .teaminfo {
+  background: #f4f4f4;
+  padding: 20px;
+  font-size: 2rem;
 }
-#teamsection #aboutcontent {
+#teamsection .teaminfo h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+#teamsection .teaminfo p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+#teamsection .teaminfo a {
+  color: #242424;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-@media (max-width: 668px) {
-  #teamsection #aboutcontent {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-}
-#teamsection #aboutcontent .teaminfo {
-  -webkit-box-shadow: 0 3px 2px #343434;
-  -moz-box-shadow: 0 3px 2px #343434;
-  box-shadow: 0 3px 2px #343434;
-  background-color: #E5E5E5;
-  margin: 3% 0;
-  border: 1px solid black;
-  padding: 1%;
-  border-radius: 5px;
-  transition: background-color 300ms ease-in;
-  width: 45%;
-}
-#teamsection #aboutcontent .teaminfo .flipper {
-  transition: 0.8s;
-  transform-style: preserve-3d;
-  height: 100%;
-}
-#teamsection #aboutcontent .teaminfo:hover {
-  background-color: #52BA5D;
-}
-#teamsection #aboutcontent .teaminfo:hover .flipper {
-  transform: rotateY(180deg);
-}
-#teamsection #aboutcontent .teaminfo .frame1,
-#teamsection #aboutcontent .teaminfo .frame2 {
-  backface-visibility: hidden;
-}
-#teamsection #aboutcontent .teaminfo .frame1 {
-  transform: rotateY(0deg);
-}
-#teamsection #aboutcontent .teaminfo .frame1 .cardhead {
-  font-size: 3rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
-@media (max-width: 668px) {
-  #teamsection #aboutcontent .teaminfo .frame1 .cardhead {
-    padding: 2% 0;
-  }
+#teamsection .teaminfo a img {
+  width: 30px;
+  margin-right: 10px;
 }
-@media (max-width: 1200px) {
-  #teamsection #aboutcontent .teaminfo .frame1 .cardhead {
-    justify-content: center;
-  }
-  #teamsection #aboutcontent .teaminfo .frame1 .cardhead img {
-    display: none;
-  }
-}
-#teamsection #aboutcontent .teaminfo .frame1 h3 {
-  font-size: 2.5rem;
-  padding: 2% 0;
-  text-align: center;
-}
-@media (max-width: 668px) {
-  #teamsection #aboutcontent .teaminfo .frame1 h3 {
-    font-size: 3rem;
-  }
-}
-#teamsection #aboutcontent .teaminfo .frame1 p {
-  font-size: 1.8rem;
-  padding: 2% 0;
-  line-height: 2;
-}
-@media (max-width: 668px) {
-  #teamsection #aboutcontent .teaminfo .frame1 p {
-    font-size: 2.3rem;
-    text-align: center;
-  }
-}
-#teamsection #aboutcontent .teaminfo .frame2 {
-  transform: rotateY(180deg);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 1200px) {
-  #teamsection #aboutcontent .teaminfo .frame2 {
-    transform: rotateY(0deg);
-  }
-}
-#teamsection #aboutcontent .teaminfo .frame2 a {
-  font-size: 3rem;
-  padding: 2% 0;
-}
-@media (max-width: 371px) {
-  #teamsection #aboutcontent .teaminfo .frame2 a {
-    font-size: 2.3rem;
-  }
-}
-@media (max-width: 668px) {
-  #teamsection #aboutcontent .teaminfo {
-    width: 80%;
-    padding: 2%;
+@media (max-width: 325px) {
+  #teamsection .teaminfo {
+    max-width: 80%;
   }
 }
 footer {
